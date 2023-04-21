@@ -22,11 +22,11 @@
     "scripts": {
         "start": "react-app-rewired start",
         "build": "react-app-rewired build",
-        "deploy": "npm run build && npm run build-hg-pages",
+        "deploy": "npm run build && build-storybook && npm run build-hg-pages",
         "test": "react-app-rewired test",
         "eject": "react-scripts eject",
         "storybook": "start-storybook -p 6006 -s public",
-        "build-storybook": "build-storybook -s public",
+        "build-storybook": "build-storybook -o ./build/storybook",
         "build-hg-pages": "gh-pages -d build"
     },
     "eslintConfig": {
