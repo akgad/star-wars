@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    width: 250px;
+    height: 350px;
+}
+.photo {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-medium);
+    object-fit: cover;
+    object-position: center center;
+}
+
+.favotite {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 35px;
+    height: 35px;
+    filter: drop-shadow(0 0 4px #000);
+}
